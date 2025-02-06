@@ -1,0 +1,2 @@
+gavric@gmail.com|denver|ADMIN
+pera@gmail.com|NUGGETS|USER

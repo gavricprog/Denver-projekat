@@ -1,0 +1,106 @@
+﻿<Window x:Class="Milan_Denver_igraci.SecondWindow"
+        x:Name="SecondWindow2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Milan_Denver_igraci"
+        xmlns:notifications="clr-namespace:Notification.Wpf.Controls;assembly=Notification.Wpf"
+        xmlns:helper="clr-namespace:Milan_Denver_igraci.Helper"
+        mc:Ignorable="d"
+        Background="Transparent"
+        AllowsTransparency="True"
+        WindowStyle="None"
+        Title="SecondWindow" Height="435" Width="725"
+        DataContext="{x:Type helper:MyViewModel}">
+    <Canvas Margin="10,0,0,0">
+
+        <notifications:NotificationArea
+   x:Name="SecondNotificationArea"
+     Panel.ZIndex="1000"
+     MaxItems="3"
+     Position="TopRight"/>
+
+        <Path
+            Name="UPath"
+            Fill="Yellow"
+            Stroke="Blue"
+            StrokeThickness="0"
+            Height="431" Width="720" HorizontalAlignment="Center" Stretch="Fill" VerticalAlignment="Center" RenderTransformOrigin="0.087,0.069" Canvas.Top="4" Canvas.Left="-5">
+            <Path.Data>
+                <PathGeometry>
+                    <PathFigure StartPoint="0,0">
+                        <LineSegment Point="0,200" />
+                        <LineSegment Point="375,200" />
+                        <LineSegment Point="375,50"></LineSegment>
+                        <LineSegment Point="300,10"></LineSegment>
+                        <LineSegment Point="270,30"></LineSegment>
+                        <LineSegment Point="200,15"></LineSegment>
+                        <LineSegment Point="150,50"></LineSegment>
+                        <LineSegment Point="119,20"></LineSegment>
+                        <LineSegment Point="100,15"></LineSegment>
+                        <LineSegment Point="60,45"></LineSegment>
+                        <LineSegment Point="30,49"></LineSegment>
+                        <LineSegment Point="0,12"></LineSegment>
+                    </PathFigure>
+                </PathGeometry>
+            </Path.Data>
+        </Path>
+        <notifications:NotificationArea
+          x:Name="NotificationArea"
+          Panel.ZIndex="1000"
+          MaxItems="3"
+          Position="TopRight"/>
+        <Image Source="C:\Users\HP\Desktop\jokic.png" Canvas.Left="-50" Canvas.Top="281" Height="138" Width="252"></Image>
+        <Image Source="C:\Users\HP\Desktop\carmelo.png" Height="235" Width="98" Canvas.Left="607" Canvas.Top="84"/>
+
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Canvas.Top="130" Canvas.Left="202" Width="366" Height="Auto">
+            <DataGrid x:Name="dataGrid" CanUserAddRows="False" AutoGenerateColumns="False"  ItemsSource="{Binding Kosarkasi}" Width="Auto" SelectionChanged="dataGrid_SelectionChanged" Height="200"> 
+                <DataGrid.Columns>
+                    <!-- CheckBox kolona -->
+                    <DataGridTemplateColumn Header="CheckBox" Width="Auto" x:Name="check">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <CheckBox IsChecked="{Binding IsSelected,Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+                    <!-- Hyperlink kolona -->
+                    <DataGridHyperlinkColumn Header="HyperLink" Binding="{Binding HyperlinkText}" Width="Auto">
+                        <DataGridHyperlinkColumn.ElementStyle>
+                            <Style TargetType="TextBlock">
+                                <EventSetter Event="Hyperlink.Click" Handler="Hyperlink_Click"/>
+                                <Setter Property="TextDecorations" Value="Underline"/>
+                                <Setter Property="Foreground" Value="Blue"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Foreground" Value="Red"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </DataGridHyperlinkColumn.ElementStyle>
+                    </DataGridHyperlinkColumn>
+
+
+                    <!-- Slika kolona -->
+                    <DataGridTemplateColumn Header="Image" Width="Auto">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Image Source="{Binding ImagePath}" Height="50" Width="50"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+                    <!-- Datum dodavanja kolona -->
+                    <DataGridTextColumn Header="Date Added" Binding="{Binding dateTime}" Width="196" IsReadOnly="True" />
+                </DataGrid.Columns>
+            </DataGrid>
+        </ScrollViewer>
+
+        <Button x:Name="AddButton" Click="Add_click" Width="100" Height="26" Content="Add" Canvas.Left="26" Canvas.Top="176" HorizontalAlignment="Center" VerticalAlignment="Top"></Button>
+        <Button x:Name="RemoveButton" Click="Remove_click" Width="100" Height="26" Canvas.Left="26" Canvas.Top="218" Content="Remove"></Button>
+        <Button x:Name="ExitButton" Click="Exit_Click" Content="Exit" Canvas.Bottom="100" HorizontalAlignment="Left" VerticalAlignment="Center" Width="134" Canvas.Left="288" Canvas.Top="399"></Button>
+        <Image Source="C:\Users\HP\Desktop\Milan-Denver igraci\denver-logo.png" Height="101" Canvas.Left="600" Canvas.Top="334" Width="212" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
+    </Canvas>
+</Window>

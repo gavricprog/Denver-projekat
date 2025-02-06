@@ -1,0 +1,177 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\HP\\Desktop\\Reseni kolok\\Projekat Denver\\Milan-Denver igraci\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5B383CEF-C40F-4251-8DCE-8A79FEDD25C8}|Milan-Denver igraci\\Milan-Denver igraci.csproj|c:\\users\\hp\\desktop\\reseni kolok\\projekat denver\\milan-denver igraci\\milan-denver igraci\\addplayer.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B383CEF-C40F-4251-8DCE-8A79FEDD25C8}|Milan-Denver igraci\\Milan-Denver igraci.csproj|solutionrelative:milan-denver igraci\\addplayer.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B383CEF-C40F-4251-8DCE-8A79FEDD25C8}|Milan-Denver igraci\\Milan-Denver igraci.csproj|c:\\users\\hp\\desktop\\reseni kolok\\projekat denver\\milan-denver igraci\\milan-denver igraci\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5B383CEF-C40F-4251-8DCE-8A79FEDD25C8}|Milan-Denver igraci\\Milan-Denver igraci.csproj|solutionrelative:milan-denver igraci\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B383CEF-C40F-4251-8DCE-8A79FEDD25C8}|Milan-Denver igraci\\Milan-Denver igraci.csproj|c:\\users\\hp\\desktop\\reseni kolok\\projekat denver\\milan-denver igraci\\milan-denver igraci\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5B383CEF-C40F-4251-8DCE-8A79FEDD25C8}|Milan-Denver igraci\\Milan-Denver igraci.csproj|solutionrelative:milan-denver igraci\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B383CEF-C40F-4251-8DCE-8A79FEDD25C8}|Milan-Denver igraci\\Milan-Denver igraci.csproj|c:\\users\\hp\\desktop\\reseni kolok\\projekat denver\\milan-denver igraci\\milan-denver igraci\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B383CEF-C40F-4251-8DCE-8A79FEDD25C8}|Milan-Denver igraci\\Milan-Denver igraci.csproj|solutionrelative:milan-denver igraci\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B383CEF-C40F-4251-8DCE-8A79FEDD25C8}|Milan-Denver igraci\\Milan-Denver igraci.csproj|c:\\users\\hp\\desktop\\reseni kolok\\projekat denver\\milan-denver igraci\\milan-denver igraci\\secondwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B383CEF-C40F-4251-8DCE-8A79FEDD25C8}|Milan-Denver igraci\\Milan-Denver igraci.csproj|solutionrelative:milan-denver igraci\\secondwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B383CEF-C40F-4251-8DCE-8A79FEDD25C8}|Milan-Denver igraci\\Milan-Denver igraci.csproj|c:\\users\\hp\\desktop\\reseni kolok\\projekat denver\\milan-denver igraci\\milan-denver igraci\\secondwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5B383CEF-C40F-4251-8DCE-8A79FEDD25C8}|Milan-Denver igraci\\Milan-Denver igraci.csproj|solutionrelative:milan-denver igraci\\secondwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B383CEF-C40F-4251-8DCE-8A79FEDD25C8}|Milan-Denver igraci\\Milan-Denver igraci.csproj|c:\\users\\hp\\desktop\\reseni kolok\\projekat denver\\milan-denver igraci\\milan-denver igraci\\addplayer.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5B383CEF-C40F-4251-8DCE-8A79FEDD25C8}|Milan-Denver igraci\\Milan-Denver igraci.csproj|solutionrelative:milan-denver igraci\\addplayer.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B383CEF-C40F-4251-8DCE-8A79FEDD25C8}|Milan-Denver igraci\\Milan-Denver igraci.csproj|c:\\users\\hp\\desktop\\reseni kolok\\projekat denver\\milan-denver igraci\\milan-denver igraci\\model\\kosarkas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B383CEF-C40F-4251-8DCE-8A79FEDD25C8}|Milan-Denver igraci\\Milan-Denver igraci.csproj|solutionrelative:milan-denver igraci\\model\\kosarkas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B383CEF-C40F-4251-8DCE-8A79FEDD25C8}|Milan-Denver igraci\\Milan-Denver igraci.csproj|c:\\users\\hp\\desktop\\reseni kolok\\projekat denver\\milan-denver igraci\\milan-denver igraci\\helper\\myviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B383CEF-C40F-4251-8DCE-8A79FEDD25C8}|Milan-Denver igraci\\Milan-Denver igraci.csproj|solutionrelative:milan-denver igraci\\helper\\myviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B383CEF-C40F-4251-8DCE-8A79FEDD25C8}|Milan-Denver igraci\\Milan-Denver igraci.csproj|c:\\users\\hp\\desktop\\reseni kolok\\projekat denver\\milan-denver igraci\\milan-denver igraci\\helper\\toast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B383CEF-C40F-4251-8DCE-8A79FEDD25C8}|Milan-Denver igraci\\Milan-Denver igraci.csproj|solutionrelative:milan-denver igraci\\helper\\toast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Reseni kolok\\Projekat Denver\\Milan-Denver igraci\\Milan-Denver igraci\\App.xaml",
+              "RelativeDocumentMoniker": "Milan-Denver igraci\\App.xaml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Reseni kolok\\Projekat Denver\\Milan-Denver igraci\\Milan-Denver igraci\\App.xaml",
+              "RelativeToolTip": "Milan-Denver igraci\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-27T11:08:05.574Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddPlayer.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Reseni kolok\\Projekat Denver\\Milan-Denver igraci\\Milan-Denver igraci\\AddPlayer.xaml.cs",
+              "RelativeDocumentMoniker": "Milan-Denver igraci\\AddPlayer.xaml.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Reseni kolok\\Projekat Denver\\Milan-Denver igraci\\Milan-Denver igraci\\AddPlayer.xaml.cs",
+              "RelativeToolTip": "Milan-Denver igraci\\AddPlayer.xaml.cs",
+              "ViewState": "AQIAAPoAAAAAAAAAAAAwwCcBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T14:15:41.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Reseni kolok\\Projekat Denver\\Milan-Denver igraci\\Milan-Denver igraci\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Milan-Denver igraci\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Reseni kolok\\Projekat Denver\\Milan-Denver igraci\\Milan-Denver igraci\\MainWindow.xaml",
+              "RelativeToolTip": "Milan-Denver igraci\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-27T11:07:43.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Reseni kolok\\Projekat Denver\\Milan-Denver igraci\\Milan-Denver igraci\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Milan-Denver igraci\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Reseni kolok\\Projekat Denver\\Milan-Denver igraci\\Milan-Denver igraci\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Milan-Denver igraci\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T14:15:20.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SecondWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Reseni kolok\\Projekat Denver\\Milan-Denver igraci\\Milan-Denver igraci\\SecondWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Milan-Denver igraci\\SecondWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Reseni kolok\\Projekat Denver\\Milan-Denver igraci\\Milan-Denver igraci\\SecondWindow.xaml.cs",
+              "RelativeToolTip": "Milan-Denver igraci\\SecondWindow.xaml.cs",
+              "ViewState": "AQIAAFwAAAAAAAAAAAAowJoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T14:14:45.318Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SecondWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Reseni kolok\\Projekat Denver\\Milan-Denver igraci\\Milan-Denver igraci\\SecondWindow.xaml",
+              "RelativeDocumentMoniker": "Milan-Denver igraci\\SecondWindow.xaml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Reseni kolok\\Projekat Denver\\Milan-Denver igraci\\Milan-Denver igraci\\SecondWindow.xaml",
+              "RelativeToolTip": "Milan-Denver igraci\\SecondWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-28T14:14:44.182Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Kosarkas.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Reseni kolok\\Projekat Denver\\Milan-Denver igraci\\Milan-Denver igraci\\Model\\Kosarkas.cs",
+              "RelativeDocumentMoniker": "Milan-Denver igraci\\Model\\Kosarkas.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Reseni kolok\\Projekat Denver\\Milan-Denver igraci\\Milan-Denver igraci\\Model\\Kosarkas.cs",
+              "RelativeToolTip": "Milan-Denver igraci\\Model\\Kosarkas.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T14:14:41.507Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MyViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Reseni kolok\\Projekat Denver\\Milan-Denver igraci\\Milan-Denver igraci\\Helper\\MyViewModel.cs",
+              "RelativeDocumentMoniker": "Milan-Denver igraci\\Helper\\MyViewModel.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Reseni kolok\\Projekat Denver\\Milan-Denver igraci\\Milan-Denver igraci\\Helper\\MyViewModel.cs",
+              "RelativeToolTip": "Milan-Denver igraci\\Helper\\MyViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T13:45:41.327Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AddPlayer.xaml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Reseni kolok\\Projekat Denver\\Milan-Denver igraci\\Milan-Denver igraci\\AddPlayer.xaml",
+              "RelativeDocumentMoniker": "Milan-Denver igraci\\AddPlayer.xaml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Reseni kolok\\Projekat Denver\\Milan-Denver igraci\\Milan-Denver igraci\\AddPlayer.xaml",
+              "RelativeToolTip": "Milan-Denver igraci\\AddPlayer.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-28T11:06:50.428Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Toast.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Reseni kolok\\Projekat Denver\\Milan-Denver igraci\\Milan-Denver igraci\\Helper\\Toast.cs",
+              "RelativeDocumentMoniker": "Milan-Denver igraci\\Helper\\Toast.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Reseni kolok\\Projekat Denver\\Milan-Denver igraci\\Milan-Denver igraci\\Helper\\Toast.cs",
+              "RelativeToolTip": "Milan-Denver igraci\\Helper\\Toast.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T11:05:56.896Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
