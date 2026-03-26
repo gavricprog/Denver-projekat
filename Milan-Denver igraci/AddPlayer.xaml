@@ -1,100 +1,142 @@
 ﻿<Window x:Class="Milan_Denver_igraci.AddPlayer"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Milan_Denver_igraci"
         xmlns:notifications="clr-namespace:Notification.Wpf.Controls;assembly=Notification.Wpf"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        mc:Ignorable="d"
         WindowStyle="None"
         AllowsTransparency="True"
         Background="Transparent"
-        Title="AddPlayer" Height="431" Width="720">
+        Width="800"
+        Height="600"
+        WindowStartupLocation="CenterScreen"
+        MouseDown="Window_MouseDown">
 
-    <Canvas>
-        <Path
-    Name="UPath"
-    Fill="Yellow"
-    Stroke="Blue"
-    StrokeThickness="2"
-    Height="300" Width="500" HorizontalAlignment="Center" Stretch="Fill" VerticalAlignment="Top" RenderTransformOrigin="0.087,0.069">
-            <Path.Data>
-                <PathGeometry>
-                    <PathFigure StartPoint="0,0">
-                        <LineSegment Point="0,200" />
-                        <LineSegment Point="375,200" />
-                        <LineSegment Point="375,50"></LineSegment>
-                        <LineSegment Point="300,10"></LineSegment>
-                        <LineSegment Point="270,30"></LineSegment>
-                        <LineSegment Point="200,15"></LineSegment>
-                        <LineSegment Point="150,50"></LineSegment>
-                        <LineSegment Point="119,20"></LineSegment>
-                        <LineSegment Point="100,15"></LineSegment>
-                        <LineSegment Point="60,45"></LineSegment>
-                        <LineSegment Point="30,49"></LineSegment>
-                        <LineSegment Point="0,12"></LineSegment>
-                    </PathFigure>
-                </PathGeometry>
-            </Path.Data>
-        </Path>
+    <Border Background="#0f172a" CornerRadius="20" Padding="20">
+        <Border.Effect>
+            <DropShadowEffect BlurRadius="25" ShadowDepth="5" Opacity="0.3"/>
+        </Border.Effect>
 
-        <notifications:NotificationArea
-          x:Name="AddNotificationArea"
-          Panel.ZIndex="1000"
-          MaxItems="3"
-          Position="TopRight"/>
+        <Grid>
 
-        <StackPanel  Margin="180 80">
-            <TextBlock Text="Ime:" FontWeight="Bold"/>
-            <TextBox x:Name="txtIme"/>
+            <!-- NOTIFICATIONS -->
+            <notifications:NotificationArea
+                x:Name="AddNotificationArea"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Top"
+                Margin="10"
+                MaxItems="3"/>
 
-            <TextBlock Text="Prezime:" FontWeight="Bold" Margin="0,10,0,0"/>
-            <TextBox x:Name="txtPrezime" Margin="0,0,0,10"/>
+            <!-- HEADER -->
+            <TextBlock Text="Add Player"
+                       Foreground="White"
+                       FontSize="22"
+                       FontWeight="Bold"
+                       HorizontalAlignment="Left"
+                       Margin="10"/>
 
-            <TextBlock Text="Izaberite sliku:" FontWeight="Bold" Margin="0,10,0,0"/>
-            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
-                <Button Content="Izaberi sliku" Click="IzaberiSliku_Click"/>
-                <Image x:Name="imgPreview" Width="50" Height="50" Margin="10,0,0,0"/>
-            </StackPanel>
+            <!-- MAIN GRID -->
+            <Grid Margin="0,50,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="250"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
 
-          
+                <!-- LEFT SIDE -->
+                <StackPanel Grid.Column="0" Margin="10">
 
-            <Button Content="Potvrdi" Click="Potvrdi_Click" HorizontalAlignment="Right"/>
-            <Button Content="Odustani" Click="Odustani_Click" HorizontalAlignment="Right"/>
-        </StackPanel>
-        <TextBlock Text="Unesite detalje:" FontWeight="Bold" Canvas.Left="331" Canvas.Top="95" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <RichTextBox x:Name="rtbDetalji" Width="139" Height="70" Canvas.Left="331" Canvas.Top="113" HorizontalAlignment="Center" VerticalAlignment="Top" TextChanged="rtbDetalji_TextChanged"/>
-        <Image x:Name="SelectedImage" Width="100" Height="100" Canvas.Left="27" Canvas.Top="93" />
+                    <TextBlock Text="Ime" Foreground="White"/>
+                    <TextBox x:Name="txtIme" Margin="0,5,0,10" Height="30"
+                             Background="#334155" Foreground="White" BorderThickness="0"/>
 
-        <StackPanel Orientation="Horizontal" Canvas.Left="331" Canvas.Top="216">
-            <Button Click="Bold_Click">
-                <materialDesign:PackIcon Kind="FormatBold" />
-            </Button>
-            <Button Click="Italic_Click">
-                <materialDesign:PackIcon Kind="FormatItalic" />
-            </Button>
-            <Button Click="Underline_Click">
-                <materialDesign:PackIcon Kind="FormatUnderline" />
-            </Button>
-        </StackPanel>
+                    <TextBlock Text="Prezime" Foreground="White"/>
+                    <TextBox x:Name="txtPrezime" Margin="0,5,0,10" Height="30"
+                             Background="#334155" Foreground="White" BorderThickness="0"/>
 
+                    <TextBlock Text="Slika" Foreground="White"/>
+                    <Button Content="Izaberi sliku"
+                            Click="IzaberiSliku_Click"
+                            Margin="0,5,0,10"
+                            Background="#3b82f6"
+                            Foreground="White"/>
 
-        <Button Content="Boja" Click="ChangeTextColor_Click" RenderTransformOrigin="0.483,0.511" Canvas.Left="391" Canvas.Top="216" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Button Click="ChangeFont_Click" Canvas.Left="475" Canvas.Top="163" HorizontalAlignment="Center" VerticalAlignment="Top">
-            <materialDesign:PackIcon Kind="FormatFont" HorizontalAlignment="Center" Height="16" RenderTransformOrigin="0.625,-0.744" />
-        </Button>
-        <Button Content="⬆" Click="IncreaseFontSize_Click" Canvas.Left="475" Canvas.Top="123" HorizontalAlignment="Center" VerticalAlignment="Top" Width="20"/>
-        <Button Content="⬇" Click="DecreaseFontSize_Click" Canvas.Left="475" Canvas.Top="143" Width="20" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.56,0.551"/>
-        <StatusBar VerticalAlignment="Center" Canvas.Bottom="150" Canvas.Right="330" HorizontalAlignment="Left" Canvas.Left="331" Canvas.Top="187" Width="139" Height="23">
-            <StatusBarItem HorizontalAlignment="Right">
-                <TextBlock x:Name="WordCountTextBlock"/>
-            </StatusBarItem>
-        </StatusBar>
+                    <Image x:Name="SelectedImage"
+                           Height="120"
+                           Stretch="Uniform"
+                           Margin="0,10,0,10"/>
 
-        <Image Source="C:\Users\HP\Desktop\Milan-Denver igraci\handwritten.png" Width="100" Canvas.Left="27" Canvas.Top="216" HorizontalAlignment="Center" VerticalAlignment="Top"></Image>
-        <Rectangle x:Name="ColorRectangle" Width="20" Height="20" StrokeThickness="0.5" Stroke="Black" Canvas.Left="418" Canvas.Top="216" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="-1.705,0.765"/>
+                    <Button Content="Potvrdi"
+                            Click="Potvrdi_Click"
+                            Height="40"
+                            Background="#22c55e"
+                            Foreground="White"
+                            Margin="0,10,0,5"/>
 
+                    <Button Content="Odustani"
+                            Click="Odustani_Click"
+                            Height="40"
+                            Background="#ef4444"
+                            Foreground="White"/>
+                </StackPanel>
 
-    </Canvas>
+                <!-- RIGHT SIDE -->
+                <StackPanel Grid.Column="1" Margin="10">
+
+                    <TextBlock Text="Detalji"
+                               Foreground="White"
+                               Margin="0,0,0,5"/>
+
+                    <RichTextBox x:Name="rtbDetalji"
+                                 Height="200"
+                                 Background="#1e293b"
+                                 Foreground="White"
+                                 BorderThickness="0"
+                                 TextChanged="rtbDetalji_TextChanged"/>
+
+                    <!-- TOOLBAR -->
+                    <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+
+                        <Button Click="Bold_Click">
+                            <materialDesign:PackIcon Kind="FormatBold"/>
+                        </Button>
+
+                        <Button Click="Italic_Click">
+                            <materialDesign:PackIcon Kind="FormatItalic"/>
+                        </Button>
+
+                        <Button Click="Underline_Click">
+                            <materialDesign:PackIcon Kind="FormatUnderline"/>
+                        </Button>
+
+                        <Button Content="Boja"
+                                Click="ChangeTextColor_Click"
+                                Margin="10,0,0,0"/>
+
+                        <Button Click="ChangeFont_Click">
+                            <materialDesign:PackIcon Kind="FormatFont"/>
+                        </Button>
+
+                        <Button Content="⬆"
+                                Click="IncreaseFontSize_Click"/>
+
+                        <Button Content="⬇"
+                                Click="DecreaseFontSize_Click"/>
+                    </StackPanel>
+
+                    <Rectangle x:Name="ColorRectangle"
+                               Width="20"
+                               Height="20"
+                               Margin="0,10,0,0"
+                               Stroke="Black"/>
+
+                    <StatusBar Margin="0,10,0,0">
+                        <StatusBarItem>
+                            <TextBlock x:Name="WordCountTextBlock"/>
+                        </StatusBarItem>
+                    </StatusBar>
+
+                </StackPanel>
+            </Grid>
+
+        </Grid>
+    </Border>
 </Window>

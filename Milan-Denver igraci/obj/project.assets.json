@@ -7224,23 +7224,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\HP\\.nuget\\packages\\": {},
+    "C:\\Users\\MilanGavric\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\Desktop\\Reseni kolok\\Projekat Denver\\Milan-Denver igraci\\Milan-Denver igraci\\Milan-Denver igraci.csproj",
+      "projectUniqueName": "C:\\Users\\MilanGavric\\OneDrive - Milovanović & Milovanović d.o.o. Beograd\\Desktop\\Denver\\Denver-projekat\\Milan-Denver igraci\\Milan-Denver igraci.csproj",
       "projectName": "Milan-Denver igraci",
-      "projectPath": "C:\\Users\\HP\\Desktop\\Reseni kolok\\Projekat Denver\\Milan-Denver igraci\\Milan-Denver igraci\\Milan-Denver igraci.csproj",
-      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\Desktop\\Reseni kolok\\Projekat Denver\\Milan-Denver igraci\\Milan-Denver igraci\\obj\\",
+      "projectPath": "C:\\Users\\MilanGavric\\OneDrive - Milovanović & Milovanović d.o.o. Beograd\\Desktop\\Denver\\Denver-projekat\\Milan-Denver igraci\\Milan-Denver igraci.csproj",
+      "packagesPath": "C:\\Users\\MilanGavric\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\MilanGavric\\OneDrive - Milovanović & Milovanović d.o.o. Beograd\\Desktop\\Denver\\Denver-projekat\\Milan-Denver igraci\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\MilanGavric\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -7266,7 +7266,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "10.0.100"
     },
     "frameworks": {
       "net8.0-windows7.0": {
@@ -7304,7 +7305,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   },

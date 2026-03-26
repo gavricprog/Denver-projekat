@@ -41,6 +41,13 @@ namespace Milan_Denver_igraci
         notificationManager3 = new NotificationManager();
         }
 
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+            {
+                DragMove();
+            }
+        }
         private void Exit_Click(object sender, RoutedEventArgs e)
         {
             MainWindow window = new MainWindow();

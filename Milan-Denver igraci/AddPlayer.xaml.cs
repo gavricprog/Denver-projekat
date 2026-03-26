@@ -1,16 +1,17 @@
-﻿using System;
-using System.Windows;
-using Microsoft.Win32;
+﻿using Microsoft.Win32;
 using Milan_Denver_igraci.Helper;
 using Milan_Denver_igraci.Model;
-using System.Windows.Media.Imaging;
-using System.Windows.Documents;
-using System.Windows.Media;
-using System.Windows.Forms;
-using System.Windows.Controls;
 using Notification.Wpf;
+using System;
 using System.IO;
 using System.Text;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Documents;
+using System.Windows.Forms;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
 
 
 namespace Milan_Denver_igraci
@@ -264,6 +265,14 @@ private void Italic_Click(object sender, RoutedEventArgs e)
 
            
             WordCountTextBlock.Text = $"Broj reči: {wordCount}";
+        }
+
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+            {
+                DragMove();
+            }
         }
 
         private void rtbDetalji_TextChanged(object sender, TextChangedEventArgs e)

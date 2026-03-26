@@ -3,6 +3,7 @@ using System;
 using System.IO;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 using System.Xml.Serialization;
 using Milan_Denver_igraci.Helper;
 using Milan_Denver_igraci.Model;
@@ -19,11 +20,36 @@ namespace Milan_Denver_igraci
             new User { Username = "marko", Password = "123", Role = UserRole.Visitor }
         };
 
+
+        private void UserTextBox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            if (UserTextBox.Text == "Username")
+            {
+                UserTextBox.Text = "";
+            }
+        }
+
+        private void UserTextBox_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(UserTextBox.Text))
+            {
+                UserTextBox.Text = "Username";
+            }
+        }
+
         public MainWindow()
         {
             InitializeComponent();
             SerializeUsers(users);
             notificationManager = new NotificationManager();
+        }
+
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+            {
+                DragMove();
+            }
         }
 
         private async void Submit(object sender, RoutedEventArgs e)

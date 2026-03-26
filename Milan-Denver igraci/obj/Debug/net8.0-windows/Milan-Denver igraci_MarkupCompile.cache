@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\HP\Desktop\Reseni kolok\Projekat Denver\Milan-Denver igraci\Milan-Denver igraci\obj\Debug\net8.0-windows\
+C:\Users\MilanGavric\OneDrive - Milovanović & Milovanović d.o.o. Beograd\Desktop\Denver\Denver-projekat\Milan-Denver igraci\obj\Debug\net8.0-windows\
 Milan_Denver_igraci
 none
 false
-TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\HP\Desktop\Reseni kolok\Projekat Denver\Milan-Denver igraci\Milan-Denver igraci\App.xaml
+TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
+C:\Users\MilanGavric\OneDrive - Milovanović & Milovanović d.o.o. Beograd\Desktop\Denver\Denver-projekat\Milan-Denver igraci\App.xaml
 4917803360
 
 12337512750
-247252857333
+247-1298516870
 AddPlayer.xaml;Info.xaml;MainWindow.xaml;SecondWindow.xaml;
 
 False

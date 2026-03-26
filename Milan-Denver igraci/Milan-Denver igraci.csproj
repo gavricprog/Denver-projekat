@@ -10,9 +10,34 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\carmelo.png" />
+    <None Remove="Assets\contract.png" />
+    <None Remove="Assets\denver-logo.png" />
+    <None Remove="Assets\denver2.png" />
+    <None Remove="Assets\handwritten.png" />
+    <None Remove="Assets\Jokic.jfif" />
+    <None Remove="Assets\jokic.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="MaterialDesignThemes" Version="5.0.0" />
     <PackageReference Include="Microsoft.TeamFoundationServer.ExtendedClient" Version="19.225.1" />
     <PackageReference Include="Notification.Wpf" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\carmelo.png" />
+    <Resource Include="Assets\contract.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\denver-logo.png" />
+    <Resource Include="Assets\denver2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\handwritten.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Jokic.jfif" />
   </ItemGroup>
 
 </Project>

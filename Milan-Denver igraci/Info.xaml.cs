@@ -3,6 +3,7 @@ using System.IO;
 using System.Text;
 using System.Windows;
 using System.Windows.Documents;
+using System.Windows.Input;
 
 namespace Milan_Denver_igraci
 {
@@ -43,6 +44,13 @@ namespace Milan_Denver_igraci
             }
         }
 
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+            {
+                DragMove();
+            }
+        }
 
         public void SetRtfContent(string rtfContent)
         {
