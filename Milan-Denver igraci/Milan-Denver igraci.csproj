@@ -15,7 +15,6 @@
     <None Remove="Assets\denver-logo.png" />
     <None Remove="Assets\denver2.png" />
     <None Remove="Assets\handwritten.png" />
-    <None Remove="Assets\Jokic.jfif" />
     <None Remove="Assets\jokic.png" />
   </ItemGroup>
 
@@ -37,7 +36,10 @@
     <Resource Include="Assets\handwritten.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Assets\Jokic.jfif" />
+    <Resource Include="Assets\jokic.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Jokic1.png" />
   </ItemGroup>
 
 </Project>

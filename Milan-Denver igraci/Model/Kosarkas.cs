@@ -2,11 +2,8 @@
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.IO;
-using System.Text;
 using System.Windows;
-using System.Windows.Documents;
 using System.Xml.Serialization;
-using System.Windows.Controls;
 
 namespace Milan_Denver_igraci.Model
 {
@@ -15,10 +12,12 @@ namespace Milan_Denver_igraci.Model
         public string name { get; set; }
         public string last_name { get; set; }
         public string RtfFilePath { get; set; }
+
         public string HyperlinkText
         {
-            get { return $"{name} {last_name}"; } 
+            get { return $"{name} {last_name}"; }
         }
+
         public string ImagePath { get; set; }
 
         private string _details;
@@ -50,7 +49,6 @@ namespace Milan_Denver_igraci.Model
         }
 
         private bool _isSelected;
-
         public bool IsSelected
         {
             get { return _isSelected; }
@@ -64,10 +62,12 @@ namespace Milan_Denver_igraci.Model
             }
         }
 
-
         public DateTime dateTime { get; set; }
 
-        public Kosarkas() { dateTime = DateTime.Now; }
+        public Kosarkas()
+        {
+            dateTime = DateTime.Now;
+        }
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -76,62 +76,68 @@ namespace Milan_Denver_igraci.Model
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
+        // 🔥 RTF SAVE (fix putanja)
         public static string SaveRTFContent(string rtfContent)
         {
-            string rtfFilePath = ""; 
             try
             {
-               
-                string directoryPath = @"C:\Users\HP\Desktop\Milan-Denver igraci";
-                string fileName = Guid.NewGuid().ToString() + ".rtf";
-                rtfFilePath = Path.Combine(directoryPath, fileName);
+                string folder = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "RTF");
+                Directory.CreateDirectory(folder);
 
-               
-                File.WriteAllText(rtfFilePath, rtfContent);
+                string fileName = Guid.NewGuid().ToString() + ".rtf";
+                string fullPath = Path.Combine(folder, fileName);
+
+                File.WriteAllText(fullPath, rtfContent);
+
+                return fullPath;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Greška prilikom spremanja RTF sadržaja: " + ex.Message, "Greška", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Greška prilikom spremanja RTF sadržaja: " + ex.Message);
+                return "";
             }
-            return rtfFilePath;
         }
 
-
-
+        // 🔥 SERIALIZE (FIX PATH + IME FAJLA)
         public static void SerializeKosarkas(Kosarkas[] kosarkasi)
         {
             try
             {
+                string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "kosarkasi.xml");
+
                 var serializer = new XmlSerializer(typeof(Kosarkas[]));
-                using (var stream = new FileStream("kosarkas.xml", FileMode.Create))
+
+                using (var stream = new FileStream(path, FileMode.Create))
                 {
                     serializer.Serialize(stream, kosarkasi);
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Greška prilikom serijalizacije kosarkasa: " + ex.Message, "Greška", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Greška prilikom serijalizacije: " + ex.Message);
             }
         }
 
+        // 🔥 DESERIALIZE (FIX SVE)
         public static ObservableCollection<Kosarkas> DeserializeKosarkas()
         {
             try
             {
-                var serializer = new XmlSerializer(typeof(ObservableCollection<Kosarkas>));
-                using (var stream = new FileStream("kosarkas.xml", FileMode.Open))
+                string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "kosarkasi.xml");
+
+                if (!File.Exists(path) || new FileInfo(path).Length == 0)
+                    return new ObservableCollection<Kosarkas>();
+
+                var serializer = new XmlSerializer(typeof(Kosarkas[]));
+
+                using (var stream = new FileStream(path, FileMode.Open))
                 {
-                    return (ObservableCollection<Kosarkas>)serializer.Deserialize(stream);
+                    var data = (Kosarkas[])serializer.Deserialize(stream);
+                    return new ObservableCollection<Kosarkas>(data);
                 }
             }
-            catch (FileNotFoundException)
+            catch (Exception)
             {
-                
-                return new ObservableCollection<Kosarkas>();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Greška prilikom deserijalizacije kosarkasa: " + ex.Message, "Greška", MessageBoxButton.OK, MessageBoxImage.Error);
                 return new ObservableCollection<Kosarkas>();
             }
         }

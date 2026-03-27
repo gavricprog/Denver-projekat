@@ -23,12 +23,7 @@ namespace Milan_Denver_igraci.Helper
             Kosarkasi = Kosarkas.DeserializeKosarkas();
 
            
-            if (Kosarkasi.Count == 0)
-            {
-                Kosarkasi.Add(new Kosarkas { name = "Nikola", last_name = "Jokic", ImagePath = "C:\\Users\\HP\\Desktop\\jokic.jpg", brDresa = 15 });
-                Kosarkasi.Add(new Kosarkas { name = "Aaron", last_name = "Gordon", ImagePath = "C:\\Users\\HP\\Desktop\\gordon.jpg", brDresa = 00 });
-                Kosarkasi.Add(new Kosarkas { name = "Jamal", last_name = "Murray", ImagePath = "C:\\Users\\HP\\Desktop\\murray.jpg", brDresa = 27 });
-            }
+            
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

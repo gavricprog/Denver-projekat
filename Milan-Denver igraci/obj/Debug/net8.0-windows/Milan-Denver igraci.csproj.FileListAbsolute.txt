@@ -225,7 +225,6 @@ C:\Users\MilanGavric\OneDrive - Milovanović & Milovanović d.o.o. Beograd\Deskt
 C:\Users\MilanGavric\OneDrive - Milovanović & Milovanović d.o.o. Beograd\Desktop\Denver\Denver-projekat\Milan-Denver igraci\obj\Debug\net8.0-windows\App.g.cs
 C:\Users\MilanGavric\OneDrive - Milovanović & Milovanović d.o.o. Beograd\Desktop\Denver\Denver-projekat\Milan-Denver igraci\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
 C:\Users\MilanGavric\OneDrive - Milovanović & Milovanović d.o.o. Beograd\Desktop\Denver\Denver-projekat\Milan-Denver igraci\obj\Debug\net8.0-windows\Milan-Denver igraci_MarkupCompile.cache
-C:\Users\MilanGavric\OneDrive - Milovanović & Milovanović d.o.o. Beograd\Desktop\Denver\Denver-projekat\Milan-Denver igraci\obj\Debug\net8.0-windows\Milan-Denver igraci_MarkupCompile.lref
 C:\Users\MilanGavric\OneDrive - Milovanović & Milovanović d.o.o. Beograd\Desktop\Denver\Denver-projekat\Milan-Denver igraci\obj\Debug\net8.0-windows\AddPlayer.baml
 C:\Users\MilanGavric\OneDrive - Milovanović & Milovanović d.o.o. Beograd\Desktop\Denver\Denver-projekat\Milan-Denver igraci\obj\Debug\net8.0-windows\Info.baml
 C:\Users\MilanGavric\OneDrive - Milovanović & Milovanović d.o.o. Beograd\Desktop\Denver\Denver-projekat\Milan-Denver igraci\obj\Debug\net8.0-windows\MainWindow.baml

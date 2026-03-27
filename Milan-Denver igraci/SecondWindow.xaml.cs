@@ -57,23 +57,35 @@ namespace Milan_Denver_igraci
 
         private void Remove_click(object sender, RoutedEventArgs e)
         {
-           
-            var result = System.Windows.Forms.MessageBox.Show("Da li ste sigurni da želite obrisati označene igrače?", "Potvrda brisanja", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            var result = System.Windows.Forms.MessageBox.Show(
+                "Da li ste sigurni da želite obrisati označene igrače?",
+                "Potvrda brisanja",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
 
             if (result == System.Windows.Forms.DialogResult.Yes)
             {
-                var viewModel = (MyViewModel)DataContext;              
-                var košarkašiZaBrisanje = viewModel.Kosarkasi.Where(k => !k.IsSelected).ToList();
-                viewModel.Kosarkasi = new ObservableCollection<Kosarkas>(košarkašiZaBrisanje);
+                var viewModel = (MyViewModel)DataContext;
 
-                ShowToastNotification(new Toast("Uspeh!", "Brisanje se izvrsilo", NotificationType.Success));
+                // 🔥 UZMI SAMO čekirane (te brišemo)
+                var zaBrisanje = viewModel.Kosarkasi
+                                         .Where(k => k.IsSelected)
+                                         .ToList();
+
+                // 🔥 OBRIŠI ih iz kolekcije
+                foreach (var igrac in zaBrisanje)
+                {
+                    viewModel.Kosarkasi.Remove(igrac);
+                }
+
+                ShowToastNotification(new Toast("Uspeh!", "Brisanje se izvršilo", NotificationType.Success));
+
+                // 🔥 sačuvaj stanje
                 Kosarkas.SerializeKosarkas(viewModel.Kosarkasi.ToArray());
-
 
                 RefreshDataGrid();
             }
         }
-
 
         private void RefreshDataGrid()
         {

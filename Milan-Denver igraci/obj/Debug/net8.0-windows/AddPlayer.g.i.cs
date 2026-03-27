@@ -112,7 +112,7 @@ namespace Milan_Denver_igraci {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Milan-Denver igraci;component/addplayer.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Milan-Denver igraci;V1.0.0.0;component/addplayer.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\AddPlayer.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
